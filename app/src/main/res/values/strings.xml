@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YesOrNo</string>
+    <string name="questionmark">\?</string>
+    <string name="ic_favorites_content_description">favorites</string>
+    <string name="all_questions">Все данетки</string>
+    <string name="all_questions_count">В каталоге более %1$s данеток</string>
+    <string name="how_to_play_title">Как играть?</string>
+    <string name="how_to_play_description">Правила игры в данетки довольно просты. Ведущий читает головоломку вслух для всех игроков или одного игрока, а ее ответ читает про себя. После этого игроки задают различные вопросы, пытаясь разгадать ситуацию, которая стоит за всем этим. Вопросы можно задавать ведущему любые, но отвечать тот может только двумя словами: «да» или «нет».</string>
+    <string name="get_back_to_list">Вернуться к списку</string>
+</resources>

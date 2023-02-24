@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_primary"
+    android:layout_height="match_parent">
+
+     <androidx.appcompat.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent">
+         <ImageView
+             android:id="@+id/iv_favorites"
+             android:src="@drawable/ic_favorite"
+             android:layout_width="wrap_content"
+             android:layout_gravity="start"
+             android:layout_height="match_parent"
+             android:contentDescription="@string/ic_favorites_content_description" />
+         <TextView
+             android:id="@+id/tv_help"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/questionmark"
+             android:textSize="48sp"
+             android:layout_gravity="end"
+             android:paddingEnd="20sp"
+             android:paddingStart="20sp"
+             android:fontFamily="@font/helvetica_bold"
+             android:textColor="@color/app_secondary"/>
+     </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_all_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_questions"
+        android:fontFamily="@font/helvetica_bold"
+        android:textSize="35sp"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_questions_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="В каталоге столько-то данеток"
+        android:fontFamily="@font/helvetica"
+        android:textSize="16sp"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_all_questions"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

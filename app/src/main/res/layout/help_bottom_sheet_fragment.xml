@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_primary"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_how_to_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_play_title"
+        android:textSize="30sp"
+        android:fontFamily="@font/helvetica_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_how_to_play_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_play_description"
+        android:textSize="15sp"
+        android:paddingTop="20sp"
+        android:paddingStart="50sp"
+        android:paddingEnd="50sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/helvetica"
+        app:layout_constraintTop_toBottomOf="@id/tv_how_to_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_back"
+        android:backgroundTint="@color/app_secondary"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20sp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="30sp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_get_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_back_to_list"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/helvetica_bold"
+            android:padding="10sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
