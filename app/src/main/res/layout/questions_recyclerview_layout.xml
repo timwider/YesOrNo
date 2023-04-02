@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    app:strokeWidth="3dp"
+    android:backgroundTint="@color/app_primary"
+    app:strokeColor="@color/white"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/list_tv_question_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/helvetica_bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Человек со спичкой" />
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/list_tv_question_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/ic_favorite"/>
+
+        <TextView
+            android:id="@+id/list_tv_time_to_solve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawablePadding="10dp"
+            app:drawableLeftCompat="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list_tv_question_title"
+            tools:text="10 мин." />
+
+        <ImageView
+            android:id="@+id/iv_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/iv_favorite"
+            app:layout_constraintStart_toStartOf="@+id/iv_favorite"
+            tools:src="@drawable/ic_difficulty_hard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView >
